@@ -18,7 +18,7 @@ namespace TheSanderk35Mod.Cards
             gun.projectileSpeed = 6.5f;
             gun.ammo = 40;
             gun.reloadTimeAdd = 1.5f;
-            gun.attackSpeed = -0.25f;
+            gun.attackSpeed = 0.5f;
             gun.dontAllowAutoFire = false;
             gun.knockback = 1.5f;
         }
@@ -37,7 +37,7 @@ namespace TheSanderk35Mod.Cards
         }
         protected override string GetDescription()
         {
-            return "Gives you like infinite amount of ammo";
+            return "This is almost like a minigun";
         }
         public override string GetModName()
         {

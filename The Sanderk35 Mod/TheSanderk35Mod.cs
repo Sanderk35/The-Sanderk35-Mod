@@ -19,7 +19,7 @@ namespace TheSanderk35Mod
     {
         private const string ModId = "com.My.Mod.Id";
         private const string ModName = "The Sanderk35 Mod";
-        public const string Version = "0.1.0"; // What version are we On (major.minor.patch)?
+        public const string Version = "1.0.0"; // What version are we On (major.minor.patch)?
         public const string ModInitials = "TSM";
 
         void Awake()
