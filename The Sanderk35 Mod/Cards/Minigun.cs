@@ -15,12 +15,14 @@ namespace TheSanderk35Mod.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.damage = 0.5f;
-            gun.projectileSpeed = 6.5f;
-            gun.ammo = 40;
-            gun.reloadTimeAdd = 1.5f;
-            gun.attackSpeed = 0.5f;
+            gun.reloadTime = 1.5f;
             gun.dontAllowAutoFire = false;
             gun.knockback = 1.5f;
+            gun.ammo = 10;
+            gun.projectileSpeed = 6.5f;
+            gun.attackSpeed = 0.75f;
+            gun.bodyRecoil = 1f;
+
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -59,7 +61,7 @@ namespace TheSanderk35Mod.Cards
                 {
                     positive = true,
                     stat = "Bullets",
-                    amount = "40",
+                    amount = "15",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
 
@@ -75,7 +77,7 @@ namespace TheSanderk35Mod.Cards
                 {
                     positive = true,
                     stat = "Bullet speed",
-                    amount = "+50",
+                    amount = "More",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
 
